@@ -1,0 +1,268 @@
+*{font-family: 'Nunito Sans', sans-serif;}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-size: 15px;
+    background-color: rgba(246, 246, 246, 0.618);
+}
+
+
+.menu_top{
+    background-color: white;
+    height: 42px;
+}
+
+#navbar{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    z-index: 1;
+
+}
+
+#topNews{
+    width: 45vw;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+.card-custome{
+    background-color: rgba(0, 0, 0,0.3);
+}
+/* .card-new-div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: calc(0.25rem - 1px);
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+
+/* .custome-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 100%;
+} */
+
+
+header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.container_nav{
+    position: sticky;
+    top: 41px;
+    left: 0px;    
+    z-index: 2;
+}
+
+#marcaSection{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 120px;
+}
+
+.headlines{
+    margin: 1rem 3rem;
+    height: 35vw;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "area1 area2 area3"
+    "area1 area4 area4";
+}
+
+
+.hl1{
+    grid-area: area1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-size: cover;
+}
+.hl2{
+    grid-area: area2;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+.hl3{
+    grid-area: area3;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-size: cover;
+}
+.hl4{
+    grid-area: area4;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+.news{
+    margin: 1rem 3rem;
+}
+
+.bloque_grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 500px 30%;
+    grid-template-areas: "leftp main" "leftads main";
+    z-index: -2;
+
+}
+
+.sectitle{
+    border-style: groove;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: black;
+
+}
+
+.panelizq{
+    grid-area: leftp;
+    height: 400px;
+}
+
+.news_cards{
+    grid-area: main;
+    z-index: 0;
+}
+
+
+.topnews{
+    margin-right: 1.5rem;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.carbodyrelevants{
+    width: 60%;
+
+}
+
+.ads{
+    grid-area: leftads;
+}
+
+.card-img-top{
+    width: 60vw;
+}
+
+.card-body{
+    width: 60vw;
+    padding: 1rem 0;
+}
+
+.card-title-headlines{
+    font-size: calc(10px + 1.2vw);
+    /* font-size: 16px; */
+
+
+}
+
+
+
+@media (0px <= width <= 992px) {
+    .BreakingNews{
+      display: none;
+    }
+    .lead-hl4{
+        display: none;
+    }
+  }
+
+@media (0px <= width <= 768px){
+    .redbtnav{
+        display: none;
+    }
+
+    .menu_top{
+        background-color: rgb(253, 253, 253);
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+    .logo1{
+        display: none;
+    }
+    #marcaSection{
+        flex-direction: column-reverse;
+    }
+    #navbar{
+        margin-left: 0px;
+        margin-right: 0px;
+        top: -10px;
+    }
+
+    .headlines{
+        display: none;
+    }
+
+    .panelizq{
+        display: none;
+    }
+
+    .ads{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+    
+    .bloque_grid{
+        display: flex;
+    }
+
+    .news_cards{
+        width: 100%;
+    }
+
+    .card-img-top{
+        width: 100%;
+    }
+
+    .card-body{
+        width: 100%;
+    }
+
+}
+
+@media (0px <= width <= 576px){
+
+}
+
+@media (768px < width <= 1400px){
+    .logo2{
+        display: none;
+    }
+
+}
